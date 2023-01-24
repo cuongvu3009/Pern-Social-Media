@@ -23,10 +23,10 @@ const Navbar = () => {
           <span>lamasocial</span>
         </Link>
         <HomeOutlinedIcon />
-        {mode ? (
-          <WbSunnyOutlinedIcon onClick={switchLight} />
+        {mode === 'light' ? (
+          <WbSunnyOutlinedIcon onClick={switchDark} />
         ) : (
-          <DarkModeOutlinedIcon onClick={switchDark} />
+          <DarkModeOutlinedIcon onClick={switchLight} />
         )}
         <GridViewOutlinedIcon />
         <div className='search'>
